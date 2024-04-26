@@ -1,0 +1,45 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .hero-text {
+    max-width: 50%; /* Adjust as needed */
+  }
+  
+  .hero-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+    color: #666; /* Lighter text color */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444; /* Slightly darker on hover */
+  }
+  
+  .hero-image {
+    max-width: 50%; /* Adjust as needed */
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Ensure the image stays within bounds */
+    height: auto;
+  }
+  
