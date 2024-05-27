@@ -48,5 +48,7 @@ export class ItemComponent {
     }
   }
 
-  
+  addToCart(){
+    alert("added to cart")
+  }
 }
