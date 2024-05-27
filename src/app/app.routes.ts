@@ -8,6 +8,6 @@ export const routes: Routes = [
     {path:"main-content", component: MainContentComponent},
     {path:"categories", component: CategoriesComponent},
     {path:"login", component: LoginComponent},
-    {path:"", redirectTo:"/main-content", pathMatch:'full'},
+    {path:"", redirectTo:"/login", pathMatch:'full'},
     {path:"products/:id", component: ItemComponent}
 ];

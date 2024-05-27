@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     if (this.loginForm.valid) {
       alert("You are logged in.");
-      this.router.navigate(['/']);
+      this.router.navigate(['/main-content']);
     }
   }
 }
