@@ -1,0 +1,48 @@
+<!-- product-detail.component.html -->
+<div class="ProductInfo">
+    <div class="productInfoImage">
+      <img [src]="item.image" [alt]="item.name" />
+    </div>
+    <div class="productInfoDetails">
+      <h3>{{ item.name }}</h3>
+      <p class="productInfoPrice">${{ item.price }}</p>
+  
+      <div class="product_colors">
+        <p class="size_title">Available Colors</p>
+        <div class="color_buttons">
+          <div *ngFor="let color of item.colors"
+               class="colorBorder"
+               [ngClass]="{'selectedColor': color === selectedColor}"
+               (click)="selectColor(color)"
+               [style.background-color]="color"></div>
+        </div>
+      </div>
+  
+      <div class="product_size">
+        <p class="size_title">SELECT SIZE</p>
+        <button *ngFor="let size of item.sizes"
+                class="productInfo_size"
+                [ngClass]="{'selectedSize': size === selectedSize}"
+                (click)="selectSize(size)">{{ size }}</button>
+      </div>
+  
+      <div class="productInfo_quantity">
+        <p class="quantity_title">Quantity</p>
+        <div class="quantity_buttons">
+          <span class="quantity-minus" (click)="decreaseQuantity()">-</span>
+          <p>{{ quantity }}</p>
+          <span class="quantity-plus" (click)="increaseQuantity()">+</span>
+        </div>
+      </div>
+  
+      <button class="add_to_cart">
+        Add to Cart
+      </button>
+    </div>
+</div>
+<div class="details">
+    <h2>Details</h2>
+    <p>{{item.description}}</p>
+</div>
+<app-feature></app-feature>
+  

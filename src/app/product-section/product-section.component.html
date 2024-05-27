@@ -1,1 +1,26 @@
-<p>product-section works!</p>
+<div class="ProductContainer">
+    <div class="ProductContainerHeader">
+        <p>SHOP NOW</p>
+        <h2>Best Selling</h2>
+    </div>
+    <div class="ProductItems">
+        <div class="product_card" *ngFor="let item of items;">
+            <ng-container *ngIf="item.id > 0 && item.id <= 4">
+                <a [routerLink]="['/products', item.id]">
+                    <div class="product_img">
+                        <img src={{item.image}} alt={{item.name}} />
+ 
+                    </div>
+                </a>
+                <h3 class="product_card_title">{{item.name}}</h3>
+                <div class="prudct_card_details">
+                    <p class="prudct_card_stock" *ngIf="item.inStock; else outOfStock">In Stock</p>
+                    <ng-template #outOfStock>
+                        <p class="prudct_card_stock">Out of Stock</p>
+                    </ng-template>
+                    <p class="product_cart_price">${{item.price}}</p>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

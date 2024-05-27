@@ -1,0 +1,67 @@
+.fashion {
+    height: 440px;
+    background-color: #f6f6f6;
+    margin-top: 70px;
+  }
+  
+  .fashion_inside {
+    position: relative;
+    width: 1440px;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+  }
+  
+  .fashion_details h2 {
+    color: #202533;
+    font-size: 32px;
+  }
+  
+  .fashion_details p {
+    margin: 12px 0 48px;
+    color: #474b57;
+    font-size: 14px;
+  }
+  
+  .fashion_details .fashion_button {
+    position: relative;
+    width: 180px;
+    background-color: black;
+    color: white;
+    column-gap: 11.5px;
+    border-radius: 4px;
+  }
+  
+  .fashion_button button {
+    cursor: pointer;
+    padding-left: 15px;
+    padding: 12px 24px;
+    padding-right: 45px;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .fashion_button button img {
+    position: absolute;
+    top: 50%; /* Position the arrow vertically centered */
+    transform: translateY(-50%); /* Correct vertical centering */
+    max-width: 25px;
+    margin-left: 13px;
+  }
+  
+  .fashion_img img {
+    max-width: 250px;
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+  }
+
+  
+  

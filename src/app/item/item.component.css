@@ -1,0 +1,129 @@
+.ProductInfo {
+    display: grid;
+    width: 1440px;
+    margin: auto;
+    margin-top: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+}
+
+.productInfoImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.productInfoImage img {
+  width: 290px;
+}
+
+.productInfoDetails {
+  margin-left: 120px;
+}
+
+.productInfoDetails .product_colors {
+  margin-top: 25px;
+}
+
+.productInfoDetails .productInfoPrice {
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.productInfoDetails .product_colors button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50% !important;
+  border: none;
+}
+
+.productInfoDetails .product_size {
+  margin-top: 25px;
+}
+
+.size_title {
+  color: #5c5f6a;
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+
+.productInfo_size {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #e6e7e8;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.productInfo_color {
+  margin: 5px;
+}
+.color_buttons {
+  display: flex;
+}
+
+.colorBorder {
+  width: 35px;  /* Adjust size as needed */
+  height: 35px; /* Ensure width and height are equal to maintain the circle shape */
+  border-radius: 50%; /* This creates the rounded edges */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #ccc; /* Optional: adds a subtle border */
+  margin-right: 10px; /* Spacing between buttons */
+}
+
+.selectedColor {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black !important;
+}
+
+.productInfo_size.selectedSize {
+  border: 1px solid black;
+}
+
+.productInfo_quantity {
+  margin-top: 32px;
+}
+
+.productInfo_quantity .quantity_title {
+  font-size: 0.875rem;
+  color: #5c5f6a;
+}
+
+.quantity_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 164px;
+  height: 44px;
+  margin-top: 10px;
+  border: 1px solid #e6e7e8;
+}
+
+.quantity_buttons span {
+  cursor: pointer;
+  color: #5c5f6a;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.ProductInfo .add_to_cart {
+  cursor: pointer;
+  margin-top: 40px;
+  width: 100%;
+  padding: 12px 24px 12px 24px;
+  border: none;
+  background-color: #0e1422;
+  border-radius: 4px;
+  color: white;
+}
+
+.details{
+    margin: 100px;
+}
